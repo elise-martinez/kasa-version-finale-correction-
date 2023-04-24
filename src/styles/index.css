@@ -132,6 +132,10 @@ body {
   text-decoration: none;
 }
 
+.locationCard:hover {
+  box-shadow: 5px 5px 5px rgb(242, 151, 151);
+}
+
 .locationImg {
   width: 425px;
   height: 400px;
@@ -218,21 +222,6 @@ body {
   width: 90%;
 }
 
-@-webkit-keyframes slide-in-blurred-top {
-  0% {
-    transform: translateY(-50px) scaleY(0) scaleX(1);
-    transform-origin: 50% 0%;
-    filter: blur(40px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0) scaleY(1) scaleX(1);
-    transform-origin: 50% 50%;
-    filter: blur(0);
-    opacity: 1;
-  }
-}
-
 @keyframes slide-in-blurred-top {
   0% {
     transform: translateY(-50px) scaleY(0) scaleX(1);
@@ -249,8 +238,7 @@ body {
 }
 .show {
   display: flex;
-  -webkit-animation: slide-in-blurred-top 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
-          animation: slide-in-blurred-top 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+  animation: slide-in-blurred-top 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
 @media only screen and (max-width: 768px) {
@@ -531,21 +519,6 @@ body {
   margin-right: 20px;
 }
 
-@-webkit-keyframes slide-in-blurred-top-log {
-  0% {
-    transform: translateY(-50px) scaleY(0) scaleX(1);
-    transform-origin: 50% 0%;
-    filter: blur(40px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0) scaleY(1) scaleX(1);
-    transform-origin: 50% 50%;
-    filter: blur(0);
-    opacity: 1;
-  }
-}
-
 @keyframes slide-in-blurred-top-log {
   0% {
     transform: translateY(-50px) scaleY(0) scaleX(1);
@@ -562,8 +535,7 @@ body {
 }
 .logementShow {
   display: flex;
-  -webkit-animation: slide-in-blurred-top-log 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
-          animation: slide-in-blurred-top-log 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+  animation: slide-in-blurred-top-log 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
 @media only screen and (max-width: 768px) {
