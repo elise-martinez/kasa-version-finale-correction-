@@ -1,5 +1,9 @@
-- 1 Installation des modules obligatoires pour ouvrir le projet
-- npm install
+Ce projet est pour la société kasa qui désire un site codé avec React. 
 
-- 2 Démarrage du projet en serveur local
-- npm start
+Pour lire de fichier, on installe d'abord des modules obligatoires. 
+-> ouvrir le terminal et entrez "npm install"
+
+Pour lancer le projet
+-> sur le terminal entrez "npm start" valider
+
+Le projet sera visible sur le localhost:3000
