@@ -261,7 +261,7 @@ body {
   }
 }
 .carouselContainer {
-  height: 450px;
+  height: 415px;
   width: 90%;
   margin: 0 auto 5px;
   display: flex;
@@ -306,7 +306,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -40px;
+  margin-top: -44px;
 }
 
 @media only screen and (max-width: 1036px) {
@@ -318,11 +318,6 @@ body {
   }
   .arrowRight {
     height: 8%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .carouselCounter {
-    display: none;
   }
 }
 .titleContainer {
