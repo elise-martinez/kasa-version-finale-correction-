@@ -6,7 +6,7 @@ import logo from '../assets/logoSalmon.png'
 
 const Header = () => {
     return <header className="headerKasa">
-        <img className="logoHeader" src={logo} alt="" />
+         <NavLink to="/"> <img className="logoHeader" src={logo} alt="" /> </NavLink>
         <div className="navLinkHeader">
             <NavLink className="navLinkHeader-nav" to="/" style={isActive => ({})}>Accueil</NavLink>
             <NavLink className="navLinkHeader-nav" to="/about" style={isActive => ({})}>A Propos</NavLink>

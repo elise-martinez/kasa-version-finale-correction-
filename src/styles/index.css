@@ -125,14 +125,13 @@ body {
   background: rgb(199, 34, 34);
   background: linear-gradient(360deg, rgb(216, 60, 60) 0%, rgb(255, 96, 96) 50%);
   width: 30%;
-  height: 340px;
   margin: 15px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: flex-end;
   border-radius: 10px;
   text-decoration: none;
+  position: relative;
 }
 
 .locationImg {
@@ -140,15 +139,21 @@ body {
   height: 340px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
 }
 
 .locationTitle {
+  width: 75%;
+  height: 20px;
+  font-weight: 500;
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 0 10px;
+  position: absolute;
+  -webkit-margin-start: 0.5rem;
+          margin-inline-start: 0.5rem;
+  -webkit-margin-end: 0.5rem;
+          margin-inline-end: 0.5rem;
+  padding-bottom: 35px;
 }
 
 @media only screen and (max-width: 1036px) {

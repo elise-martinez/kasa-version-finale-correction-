@@ -11,9 +11,9 @@ const Location = () => {
             {dataList.map((data) => (
                 <NavLink className="locationCard" key={data.id} to={"/logement/" + data.id}>
                     <img className="locationImg" src={data.cover} alt={data.title} />
-                    <p className="locationTitle" >
+                    <div className="locationTitle" >
                         {data.title}
-                    </p>
+                    </div>
                 </NavLink>
             ))}
         </div>)
