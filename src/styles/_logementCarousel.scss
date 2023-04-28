@@ -12,14 +12,21 @@
     border-radius: 25px;
     background-size: contain;
     width: 100%;
+    height: 100%;
 }
 
-.carouselSwitchArrows {
+.carouselSwitch{
+    align-items: center;
+    height: 100%;
+
+}
+.carouselArrows {
     width: 100%;
     display: flex;
     align-items: center;
     height: 100%;
     justify-content: space-between;
+
 }
 
 .arrowLeft {
@@ -39,8 +46,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -50px;
+    margin-top: -40px;
 }
+
 
 @media only screen and (max-width: 1036px) {
     .carouselContainer {
@@ -53,5 +61,12 @@
 
     .arrowRight {
         height: 8%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .carouselCounter {
+        display: none;
+
     }
 }

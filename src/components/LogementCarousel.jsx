@@ -36,19 +36,18 @@ const LogementCarousel = ({ logementPictures }) => {
                 backgroundSize: "cover",
                 backgroundImage: `url(${logementPictures[currentIndex]})`
             }}>
-                {(imageNumber > 1) ??
-                    <div>
-                        <div className="carouselSwitchArrows">
+            {(imageNumber > 1) ?
+                    <div className="carouselSwitch">
+                        <div className="carouselArrows">
                             <img onClick={carouselLeftScrolling} className="arrowLeft" src={arrowLeft} alt="Photo précédente" />
                             <img onClick={carouselRightScrolling} className="arrowRight" src={arrowRight} alt="Photo suivante" />
                         </div>
                         <p className="carouselCounter">{currentIndex + 1}/{logementPictures.length}</p>
-                    </div>
+                    </div> : null
                 }
             </div>
         </div>
     )
-
 
 }
 
