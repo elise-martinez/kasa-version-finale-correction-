@@ -31,6 +31,10 @@ body {
   text-decoration: underline;
 }
 
+.navLinkHeader-nav.active {
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 768px) {
   .headerKasa {
     margin-top: 0;
@@ -41,6 +45,7 @@ body {
   .navLinkHeader-nav {
     margin: 0 10px;
     font-size: 13px;
+    text-transform: uppercase;
   }
 }
 .bannerImg {
@@ -113,17 +118,15 @@ body {
   border-radius: 25px;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
   max-width: 1450px;
 }
 
 .locationCard {
   background: rgb(199, 34, 34);
   background: linear-gradient(360deg, rgb(216, 60, 60) 0%, rgb(255, 96, 96) 50%);
-  width: 425px;
-  height: 425px;
-  margin: 20px;
+  width: 30%;
+  height: 340px;
+  margin: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,13 +135,9 @@ body {
   text-decoration: none;
 }
 
-.locationCard:hover {
-  box-shadow: 5px 5px 5px rgb(242, 151, 151);
-}
-
 .locationImg {
-  width: 425px;
-  height: 400px;
+  width: 100%;
+  height: 340px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px 10px 0 0;

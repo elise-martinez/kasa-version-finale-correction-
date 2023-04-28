@@ -26,6 +26,10 @@
     text-decoration: underline;
 }
 
+.navLinkHeader-nav.active {
+    text-decoration: underline;
+}
+
 @media only screen and (max-width: 768px) {
     .headerKasa {
         margin-top: 0;
@@ -38,5 +42,6 @@
     .navLinkHeader-nav {
         margin: 0 10px;
         font-size: 13px;
+        text-transform: uppercase;
     }
 }

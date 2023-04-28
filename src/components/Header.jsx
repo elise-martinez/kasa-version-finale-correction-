@@ -8,8 +8,8 @@ const Header = () => {
     return <header className="headerKasa">
         <img className="logoHeader" src={logo} alt="" />
         <div className="navLinkHeader">
-            <NavLink className="navLinkHeader-nav" to="/kasa">Accueil</NavLink>
-            <NavLink className="navLinkHeader-nav" to="/about">A Propos</NavLink>
+            <NavLink className="navLinkHeader-nav" to="/" style={isActive => ({})}>Accueil</NavLink>
+            <NavLink className="navLinkHeader-nav" to="/about" style={isActive => ({})}>A Propos</NavLink>
         </div>
     </header>
 }
